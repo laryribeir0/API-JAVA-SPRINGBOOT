@@ -1,15 +1,14 @@
 package com.desafio.service;
 
-import java.util.Optional;
-
+import com.desafio.entities.Usuario;
+import com.desafio.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.desafio.entities.Usuario;
-import com.desafio.repositories.UsuarioRepository;
+import java.util.Optional;
 
 @Service
 public class UsuarioService implements UserDetailsService {
